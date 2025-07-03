@@ -1,0 +1,724 @@
+/* CSS HOME */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: none;
+}
+
+.hero {
+  /* khusus home */
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/home/bg_1.jpg");
+  background-size: cover;
+}
+
+.hero2 {
+  background-color: #fcefbb;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 2%;
+  font-size: 19px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+span {
+  color: #cf313b;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: #cf313b;
+  transition: ease 0.3s;
+}
+
+/* DropDown Profile */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbd0a1;
+  min-width: 120px;
+  right: 0;
+  box-shadow: 0 2px 6px rgba(7, 7, 7, 0.918);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #cf313b;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #cf313b;
+  color: black;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn-produk {
+  background-color: #6b8e28;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 100px;
+  transition: ease 0.2s;
+}
+
+.btn-produk:hover {
+  background-color: #4e6b17;
+  transition: ease 0.2s;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  height: 78vh;
+}
+
+.content {
+  /* khusus home */
+  flex: 1;
+  margin: -110px 130px 0 20px;
+}
+
+.content2 {
+  background-color: #fcefbb;
+  padding: 20px;
+  text-align: justify;
+}
+
+.img-home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+
+.img-home img {
+  max-width: 90%;
+}
+
+h1 {
+  color: black;
+  margin: 10px 0px 20px 0px;
+  font-size: 62px;
+}
+
+h4 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+h5 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 30px 0 30px 0;
+}
+
+/* CSS ABOUT */
+.visi-misi {
+  background-color: #fcefbb;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.judul-visi-misi {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.tabel-visi-misi {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kolom {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.judul-kolom {
+  background-color: #5b892c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  margin: -20px -20px 20px -20px;
+}
+
+.kolom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kolom ul li {
+  background: #fff7d1;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+/* CSS PRODUK */
+
+.content-top {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0 30px;
+  font-weight: bold;
+  background-color: #f6db93;
+  border-radius: 100px;
+  padding: 5px 0;
+}
+
+.content-top-isi {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 20px 30px 20px;
+}
+
+.container-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 0;
+    padding: 10px; 
+    border-radius: 10px;
+    background-color: white;
+    transition: ease 0.2s;
+    width: 365px; 
+    box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+}
+
+.img-card {
+  max-width: 340px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.card .img-card img {
+  width: 100%;
+}
+
+.nama-produk {
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 8px 0 0 8px;
+}
+
+.nama-produk2 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 8px 0 0 8px;
+  color: #cf313b;
+}
+
+.merk {
+  font-size: 20px;
+  margin: 0 0 0 8px;
+  font-weight: bold;
+}
+
+.harga {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+  color: #cf313b;
+}
+
+.span-harga {
+  font-size: 15px;
+  color: black;
+}
+
+.mini-detail {
+  font-weight: bolder;
+  margin: 30px 10px 10px 10px;
+  font-size: 12px;
+}
+
+.button-product {
+  width: 100%;
+  font-weight: bolder;
+  padding: 10px 0;
+  background-color: #cf313b;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: ease 0.2s;
+}
+
+.button-product a {
+  color: white;
+  text-decoration: none;
+}
+
+.button-product:hover {
+  background-color: #a6212a;
+  transition: ease 0.2s;
+}
+
+/* CSS PRODUK DETAILS */
+
+.content2-produkdetail {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-produk-detail {
+  height: auto;
+  background-color: white;
+  border-radius: 30px;
+  margin: 0 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.isi-detail {
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.isi-detail h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px 0 30px;
+}
+
+.img-detail {
+  border-radius: 8px;
+  align-items: center;
+}
+
+.img-detail img {
+  width: 350px;
+  height: 260px;
+  margin: 0 10px 30px;
+  border-radius: 20px;
+  border: 4px solid #fcefbb;
+}
+
+.harga-detail {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 30px;
+  color: #cf313b;
+}
+
+.description {
+  text-align: justify;
+  margin: 0 20px 30px;
+  font-size: 18px;
+}
+
+.btn-block-detail {
+  text-align: right;
+  margin: 0 20px 20px 0;
+}
+
+.button-product-detail {
+  width: 120px;
+  font-weight: bolder;
+  padding: 10px 0 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #cf313b;
+  transition: ease 0.2s;
+}
+
+.button-product-detail a {
+  color: white;
+  text-decoration: none;
+}
+
+.button-product-detail:hover {
+  background-color: #a6212a;
+  transition: ease 0.2s;
+}
+
+/* CSS CONTACT */
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.social-media {
+  margin: 30px 0 30px 25px;
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 12px 25px;
+  margin: 0 10px;
+  border-radius: 100px;
+  background-color: #cf313b;
+  color: #ffffff;
+  transition: ease 0.2s;
+}
+
+.social-media a:hover {
+  background-color: #a6212a;
+  transition: ease 0.2s;
+}
+
+.social-media i {
+  margin-right: 5px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.box-form {
+  height: auto;
+  background-color: white;
+  border-radius: 30px;
+  margin: 0 20px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+textarea {
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+.tombol {
+  display: flex;
+}
+
+.btn-kirim {
+  background-color: #6b8e28;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 100px;
+  transition: ease 0.2s;
+}
+
+.btn-kirim:hover {
+  background-color: #4e6b17;
+  transition: ease 0.2s;
+}
+
+/* CSS DATA PRODUCT */
+.table-produk {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-produk th,
+.table-produk td {
+    border: 2px solid black;
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 20px;
+}
+
+.table-produk th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.table-produk img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* CSS DATA CATEGORY */
+.table-kategori {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-kategori th,
+.table-kategori td {
+    border: 2px solid black;
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 20px;
+}
+
+.table-kategori th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.table-kategori img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* CSS DATA Feedback */
+.table-feedback {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-feedback th,
+.table-feedback td {
+    border: 2px solid black;
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 20px;
+}
+
+.table-feedback th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* CSS DATA USER */
+.table-user {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    table-layout: fixed; 
+}
+
+.table-user th,
+.table-user td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 16px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.table-user th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* CSS KERANJANG */
+.table-keranjang {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    table-layout: fixed; 
+}
+
+.table-keranjang th,
+.table-keranjang td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 16px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.table-keranjang th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.alert-harga {
+    padding: 20px;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.label-total {
+    color: #000;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.harga-total {
+    color: #cf313b;
+    font-size: 20px;
+}
+
+/* CSS CHECKOUT */
+.table-checkout {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    table-layout: fixed; 
+}
+
+.table-checkout th,
+.table-checkout td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 16px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.table-checkout th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* CSS PROFILE */
+.table-profile {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    table-layout: fixed; 
+}
+
+.table-profile th,
+.table-profile td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 !important; 
+    font-size: 16px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.table-profile th {
+    background-color: #d9bf76;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
