@@ -49,6 +49,11 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
     // Midtrans Integration Routes - Ditempatkan di dalam filter login jika hanya user terautentikasi yang bisa melakukan transaksi
     $routes->post('buy', 'Keranjang::buy');
     $routes->get('checkout/payment/(:num)', 'Keranjang::payment/$1');
+
+    // Rute Khusus Admin
+    $routes->group('admin', ['filter' => 'admin'], function ($routes) {
+        $routes->get('riwayat', 'AdminController::riwayat');
+    });
 });
 
 // CRUD Product
@@ -77,12 +82,11 @@ $routes->group('data_user', ['filter' => 'login'], function ($routes) {
     $routes->get('', 'UserController::index');
     $routes->post('', 'UserController::create');
     $routes->post('edit/(:any)', 'UserController::edit/$1');
-    $routes->get('delete/(:any)', 'UserController::delete/$1');
 });
 
 // Rute Midtrans Callback
 // Karena Midtrans akan memanggil endpoint ini tanpa otentikasi user
 $routes->post('/midtrans/callback', 'Keranjang::midtransCallback');
 
-// Web Server
-$routes->resource('api', ['controller' => 'apiController']);
+// Web Service (API)
+$routes->resource('api', ['controller' => 'ApiController']);

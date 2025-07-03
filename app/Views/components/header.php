@@ -10,7 +10,7 @@ $formattedRole = $role ? ucfirst($role) : '';
     <div class="logo">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo"></a>
     </div>
-    
+
     <ul>
         <!-- Menu Beranda -->
         <li>
@@ -117,13 +117,11 @@ $formattedRole = $role ? ucfirst($role) : '';
                 </a>
                 <div class="dropdown-content">
                     <a href="<?= base_url('logout'); ?>">Logout</a>
-                    <?php
-                    if (session()->get('role') == 'guest') {
-                    ?>
+                    <?php if (session()->get('role') == 'guest'): ?>
                         <a href="<?= base_url('profile'); ?>">Profile</a>
-                    <?php
-                    }
-                    ?>
+                    <?php elseif (session()->get('role') == 'admin'): ?>
+                        <a href="<?= base_url('admin/riwayat'); ?>">Riwayat</a>
+                    <?php endif; ?>
                 </div>
             </li>
         <?php endif; ?>

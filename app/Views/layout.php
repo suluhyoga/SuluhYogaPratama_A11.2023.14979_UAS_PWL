@@ -1,5 +1,4 @@
 <?php
-// Mendapatkan nama halaman saat ini untuk ditampilkan di judul browser
 $hlm = "Beranda";
 if (uri_string() != "") {
     $uri = uri_string();
